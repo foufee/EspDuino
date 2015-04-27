@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (2014-12-16 BZR 5324)-product   date = Tuesday, 21 April 2015 08:11:27 pm
+Cmp-Mod V01 Created by Cvpcb (2014-12-16 BZR 5324)-product   date = Thursday, 23 April 2015 11:11:04 pm
 
 BeginCmp
 TimeStamp = /54F43EE2;
@@ -54,6 +54,13 @@ TimeStamp = /5534C489/55361A1B;
 Reference = C404;
 ValeurCmp = 0.1uF;
 IdModule  = Capacitors_SMD:C_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /5538D1CF;
+Reference = CON101;
+ValeurCmp = USB-MICRO-B;
+IdModule  = Connect:USB_Micro-B;
 EndCmp
 
 BeginCmp
@@ -162,14 +169,14 @@ IdModule  = SMD_Packages:SOIC-14_N;
 EndCmp
 
 BeginCmp
-TimeStamp = /553374CB/55337A29;
+TimeStamp = /553374CB/5538DE80;
 Reference = U301;
 ValeurCmp = LSF0204x;
 IdModule  = AB2_TSSOP:AB2_TSSOP14;
 EndCmp
 
 BeginCmp
-TimeStamp = /553374CB/55337A30;
+TimeStamp = /553374CB/5538DE86;
 Reference = U302;
 ValeurCmp = ESP8266;
 IdModule  = LittlebushLogicFootPrints:ESP8266;
