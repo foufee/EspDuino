@@ -118,7 +118,7 @@ F 3 "" H 8100 2150 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5550 2100 6600 2100
+	5550 2100 6850 2100
 Wire Wire Line
 	4250 2100 4750 2100
 Wire Wire Line
@@ -359,4 +359,16 @@ F 3 "" H 1050 2300 60  0000 C CNN
 	1    1050 2300
 	1    0    0    -1  
 $EndComp
+$Comp
+L +5V #PWR?
+U 1 1 55911069
+P 6850 2100
+F 0 "#PWR?" H 6850 1950 60  0001 C CNN
+F 1 "+5V" H 6850 2240 60  0000 C CNN
+F 2 "" H 6850 2100 60  0000 C CNN
+F 3 "" H 6850 2100 60  0000 C CNN
+	1    6850 2100
+	1    0    0    -1  
+$EndComp
+Connection ~ 6600 2100
 $EndSCHEMATC
