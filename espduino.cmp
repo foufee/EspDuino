@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (2014-12-16 BZR 5324)-product   date = Thursday, 23 April 2015 11:11:04 pm
+Cmp-Mod V01 Created by Cvpcb (2014-12-16 BZR 5324)-product   date = Friday, 10 July 2015 04:40:01 pm
 
 BeginCmp
 TimeStamp = /54F43EE2;
@@ -60,7 +60,21 @@ BeginCmp
 TimeStamp = /5538D1CF;
 Reference = CON101;
 ValeurCmp = USB-MICRO-B;
-IdModule  = Connect:USB_Micro-B;
+IdModule  = LittlebushLogicFootPrints:USB_Micro-B;
+EndCmp
+
+BeginCmp
+TimeStamp = /559DF1DC;
+Reference = CON102;
+ValeurCmp = AVR-ISP-6;
+IdModule  = Pin_Headers:Pin_Header_Angled_2x03;
+EndCmp
+
+BeginCmp
+TimeStamp = /559CE2A1/559CE498;
+Reference = CON501;
+ValeurCmp = AVR-ISP-6;
+IdModule  = Pin_Headers:Pin_Header_Angled_2x03;
 EndCmp
 
 BeginCmp
@@ -78,10 +92,17 @@ IdModule  = LEDs:LED-0805;
 EndCmp
 
 BeginCmp
-TimeStamp = /54EF0576;
+TimeStamp = /5593AEC4;
 Reference = IC101;
-ValeurCmp = ATMEGA168-A;
+ValeurCmp = ATMEGA328-P;
 IdModule  = LittlebushLogicFootPrints:TQFP32_08;
+EndCmp
+
+BeginCmp
+TimeStamp = /559CE2A1/559CE328;
+Reference = IC501;
+ValeurCmp = ATTINY25-SS;
+IdModule  = SMD_Packages:SOIC-8-N;
 EndCmp
 
 BeginCmp
@@ -102,7 +123,7 @@ BeginCmp
 TimeStamp = /54EEFCA8;
 Reference = P103;
 ValeurCmp = FTDI;
-IdModule  = Pin_Headers:Pin_Header_Angled_1x06;
+IdModule  = Pin_Headers:Pin_Header_Straight_1x06;
 EndCmp
 
 BeginCmp
@@ -110,6 +131,13 @@ TimeStamp = /54F6EBD0;
 Reference = P104;
 ValeurCmp = CONN_01X02;
 IdModule  = Pin_Headers:Pin_Header_Straight_1x02;
+EndCmp
+
+BeginCmp
+TimeStamp = /559105BB;
+Reference = P105;
+ValeurCmp = CONN_01X03;
+IdModule  = Pin_Headers:Pin_Header_Straight_1x03;
 EndCmp
 
 BeginCmp
@@ -122,6 +150,13 @@ EndCmp
 BeginCmp
 TimeStamp = /5534C489/553605EF;
 Reference = P402;
+ValeurCmp = CONN_01X02;
+IdModule  = Pin_Headers:Pin_Header_Straight_1x02;
+EndCmp
+
+BeginCmp
+TimeStamp = /559CE2A1/559CE3C2;
+Reference = P501;
 ValeurCmp = CONN_01X02;
 IdModule  = Pin_Headers:Pin_Header_Straight_1x02;
 EndCmp
@@ -145,6 +180,20 @@ TimeStamp = /5534C489/5534E496;
 Reference = R401;
 ValeurCmp = 100K;
 IdModule  = Resistors_SMD:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /559CE2A1/559CE37E;
+Reference = R501;
+ValeurCmp = R;
+IdModule  = Resistors_SMD:R_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /559CE2A1/559CE688;
+Reference = SP501;
+ValeurCmp = SPEAKER;
+IdModule  = Buzzers_Beepers:Buzzer_12x9.5RM7.6;
 EndCmp
 
 BeginCmp
@@ -179,7 +228,7 @@ BeginCmp
 TimeStamp = /553374CB/5538DE86;
 Reference = U302;
 ValeurCmp = ESP8266;
-IdModule  = LittlebushLogicFootPrints:ESP8266;
+IdModule  = LittlebushLogicFootPrints:ESP8266_2;
 EndCmp
 
 BeginCmp

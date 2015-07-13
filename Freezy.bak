@@ -1,0 +1,221 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:littlebush
+LIBS:espduino-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ATTINY25-SS IC501
+U 1 1 559CE328
+P 3350 1675
+F 0 "IC501" H 2200 2075 40  0000 C CNN
+F 1 "ATTINY25-SS" H 4350 1275 40  0000 C CNN
+F 2 "SO8" H 4350 1675 35  0000 C CIN
+F 3 "" H 3350 1675 60  0000 C CNN
+	1    3350 1675
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR035
+U 1 1 559CE359
+P 5025 1950
+F 0 "#PWR035" H 5025 1700 60  0001 C CNN
+F 1 "GND" H 5025 1800 60  0000 C CNN
+F 2 "" H 5025 1950 60  0000 C CNN
+F 3 "" H 5025 1950 60  0000 C CNN
+	1    5025 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 1925 5025 1925
+Wire Wire Line
+	5025 1925 5025 1950
+$Comp
+L R R501
+U 1 1 559CE37E
+P 1275 1575
+F 0 "R501" V 1355 1575 50  0000 C CNN
+F 1 "R" V 1282 1576 50  0000 C CNN
+F 2 "" V 1205 1575 30  0000 C CNN
+F 3 "" H 1275 1575 30  0000 C CNN
+	1    1275 1575
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P501
+U 1 1 559CE3C2
+P 1075 1950
+F 0 "P501" H 1075 2100 50  0000 C CNN
+F 1 "CONN_01X02" V 1175 1950 50  0000 C CNN
+F 2 "" H 1075 1950 60  0000 C CNN
+F 3 "" H 1075 1950 60  0000 C CNN
+	1    1075 1950
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR036
+U 1 1 559CE407
+P 1275 2100
+F 0 "#PWR036" H 1275 1850 60  0001 C CNN
+F 1 "GND" H 1275 1950 60  0000 C CNN
+F 2 "" H 1275 2100 60  0000 C CNN
+F 3 "" H 1275 2100 60  0000 C CNN
+	1    1275 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1275 2000 1275 2100
+Wire Wire Line
+	1275 1900 1275 1825
+$Comp
+L +3V3 #PWR037
+U 1 1 559CE43D
+P 1275 1225
+F 0 "#PWR037" H 1275 1075 60  0001 C CNN
+F 1 "+3V3" H 1275 1365 60  0000 C CNN
+F 2 "" H 1275 1225 60  0000 C CNN
+F 3 "" H 1275 1225 60  0000 C CNN
+	1    1275 1225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1275 1225 1275 1325
+Wire Wire Line
+	1275 1825 2000 1825
+$Comp
+L AVR-ISP-6 CON501
+U 1 1 559CE498
+P 1875 875
+F 0 "CON501" H 1795 1115 50  0000 C CNN
+F 1 "AVR-ISP-6" H 1635 645 50  0000 L BNN
+F 2 "AVR-ISP-6" V 1355 915 50  0001 C CNN
+F 3 "" H 1875 875 60  0000 C CNN
+	1    1875 875 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 775  1550 775 
+Wire Wire Line
+	1550 775  1550 1525
+Wire Wire Line
+	1550 1525 2000 1525
+Wire Wire Line
+	2000 1425 2000 1225
+Wire Wire Line
+	2000 1225 2100 1225
+Wire Wire Line
+	2100 1225 2100 875 
+Wire Wire Line
+	2100 875  2000 875 
+Wire Wire Line
+	1750 875  1600 875 
+Wire Wire Line
+	1600 875  1600 1625
+Wire Wire Line
+	1600 1625 2000 1625
+Wire Wire Line
+	1750 975  1750 1925
+Connection ~ 1750 1925
+Wire Wire Line
+	1750 1925 2000 1925
+$Comp
+L +3V3 #PWR038
+U 1 1 559CE5C1
+P 2450 775
+F 0 "#PWR038" H 2450 625 60  0001 C CNN
+F 1 "+3V3" H 2450 915 60  0000 C CNN
+F 2 "" H 2450 775 60  0000 C CNN
+F 3 "" H 2450 775 60  0000 C CNN
+	1    2450 775 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 775  2000 775 
+$Comp
+L +3V3 #PWR039
+U 1 1 559CE60F
+P 4900 1425
+F 0 "#PWR039" H 4900 1275 60  0001 C CNN
+F 1 "+3V3" H 4900 1565 60  0000 C CNN
+F 2 "" H 4900 1425 60  0000 C CNN
+F 3 "" H 4900 1425 60  0000 C CNN
+	1    4900 1425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 1425 4700 1425
+$Comp
+L SPEAKER SP501
+U 1 1 559CE688
+P 3175 850
+F 0 "SP501" H 3075 1100 50  0000 C CNN
+F 1 "SPEAKER" H 3075 600 50  0000 C CNN
+F 2 "" H 3175 850 60  0000 C CNN
+F 3 "" H 3175 850 60  0000 C CNN
+	1    3175 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2875 950  2875 1200
+Wire Wire Line
+	2875 1200 2100 1200
+Connection ~ 2100 1200
+Wire Wire Line
+	2000 975  2700 975 
+Wire Wire Line
+	2700 975  2700 750 
+Wire Wire Line
+	2700 750  2875 750 
+$Comp
+L GND #PWR040
+U 1 1 559CE71A
+P 2575 975
+F 0 "#PWR040" H 2575 725 60  0001 C CNN
+F 1 "GND" H 2575 825 60  0000 C CNN
+F 2 "" H 2575 975 60  0000 C CNN
+F 3 "" H 2575 975 60  0000 C CNN
+	1    2575 975 
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
