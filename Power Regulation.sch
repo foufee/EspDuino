@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:espduino-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -10,7 +11,6 @@ LIBS:cmos4000
 LIBS:adc-dac
 LIBS:memory
 LIBS:xilinx
-LIBS:special
 LIBS:microcontrollers
 LIBS:dsp
 LIBS:microchip
@@ -30,12 +30,42 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:littlebush
+LIBS:ab2_7segment
+LIBS:ab2_audio
+LIBS:ab2_buffer
+LIBS:ab2_capacitor
+LIBS:ab2_connectivity
+LIBS:ab2_dac
+LIBS:ab2_diode
+LIBS:ab2_gpio_expansion
+LIBS:ab2_header
+LIBS:ab2_idc
+LIBS:ab2_inductor
+LIBS:ab2_input_devices
+LIBS:ab2_jumper
+LIBS:ab2_lcd
+LIBS:ab2_led
+LIBS:ab2_opamp
+LIBS:ab2_pot
+LIBS:ab2_power
+LIBS:ab2_regulator
+LIBS:ab2_relay
+LIBS:ab2_resistor
+LIBS:ab2_sensor
+LIBS:ab2_stepper
+LIBS:ab2_supply
+LIBS:ab2_terminal_block
+LIBS:ab2_test
+LIBS:ab2_transistor
+LIBS:ab2_uC
+LIBS:ab2_usb
+LIBS:ab2_xtal
 LIBS:espduino-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 5
+Sheet 4 6
 Title ""
 Date ""
 Rev ""
@@ -112,7 +142,7 @@ U 1 1 5534E45C
 P 8100 2150
 F 0 "U402" H 8100 2400 40  0000 C CNN
 F 1 "LD1117S33TR" H 8100 2350 40  0000 C CNN
-F 2 "SOT-223" H 8100 2250 40  0000 C CNN
+F 2 "SMD_Packages:SOT-223" H 8100 2250 40  0000 C CNN
 F 3 "" H 8100 2150 60  0000 C CNN
 	1    8100 2150
 	1    0    0    -1  
@@ -200,34 +230,34 @@ F 3 "" H 4550 2600 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D401
+L LED-RESCUE-espduino D401
 U 1 1 5534E48F
 P 6600 2900
 F 0 "D401" H 6600 3000 50  0000 C CNN
 F 1 "LED" H 6600 2800 50  0000 C CNN
-F 2 "" H 6600 2900 60  0000 C CNN
+F 2 "LEDs:LED-0805" H 6600 2900 60  0001 C CNN
 F 3 "" H 6600 2900 60  0000 C CNN
 	1    6600 2900
 	0    1    1    0   
 $EndComp
 $Comp
-L R R401
+L R-RESCUE-espduino R401
 U 1 1 5534E496
 P 6600 2350
 F 0 "R401" V 6680 2350 50  0000 C CNN
 F 1 "100K" V 6607 2351 50  0000 C CNN
-F 2 "" V 6530 2350 30  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 6530 2350 30  0001 C CNN
 F 3 "" H 6600 2350 30  0000 C CNN
 	1    6600 2350
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C403
+L C-RESCUE-espduino C403
 U 1 1 5534E49D
 P 6200 2300
 F 0 "C403" H 6250 2400 50  0000 L CNN
 F 1 "0.1uF" H 6250 2200 50  0000 L CNN
-F 2 "" H 6238 2150 30  0000 C CNN
+F 2 "Capacitors_SMD:C_0805" H 6238 2150 30  0001 C CNN
 F 3 "" H 6200 2300 60  0000 C CNN
 	1    6200 2300
 	1    0    0    -1  
@@ -238,7 +268,7 @@ U 1 1 5534E4A4
 P 5850 2300
 F 0 "C402" H 5900 2400 50  0000 L CNN
 F 1 "10uF" H 5900 2200 50  0000 L CNN
-F 2 "" H 5888 2150 30  0000 C CNN
+F 2 "Capacitors_SMD:c_elec_4x5.8" H 5888 2150 30  0001 C CNN
 F 3 "" H 5850 2300 60  0000 C CNN
 	1    5850 2300
 	1    0    0    -1  
@@ -249,7 +279,7 @@ U 1 1 5534E4AB
 P 4550 2300
 F 0 "C401" H 4600 2400 50  0000 L CNN
 F 1 "10uF" H 4600 2200 50  0000 L CNN
-F 2 "" H 4588 2150 30  0000 C CNN
+F 2 "Capacitors_SMD:c_elec_4x5.8" H 4588 2150 30  0001 C CNN
 F 3 "" H 4550 2300 60  0000 C CNN
 	1    4550 2300
 	1    0    0    -1  
@@ -260,7 +290,7 @@ U 1 1 5534E4B2
 P 5150 2150
 F 0 "U401" H 5150 2400 40  0000 C CNN
 F 1 "LD1117S12TR" H 5150 2350 40  0000 C CNN
-F 2 "SOT-223" H 5150 2250 40  0000 C CNN
+F 2 "SMD_Packages:SOT-223" H 5150 2250 40  0000 C CNN
 F 3 "" H 5150 2150 60  0000 C CNN
 	1    5150 2150
 	1    0    0    -1  
@@ -309,7 +339,7 @@ U 1 1 553605AC
 P 1600 1350
 F 0 "P401" H 1600 1500 50  0000 C CNN
 F 1 "CONN_01X02" V 1750 1300 50  0000 C CNN
-F 2 "" H 1600 1350 60  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 1600 1350 60  0001 C CNN
 F 3 "" H 1600 1350 60  0000 C CNN
 	1    1600 1350
 	1    0    0    -1  
@@ -320,7 +350,7 @@ U 1 1 553605EF
 P 1600 2250
 F 0 "P402" H 1600 2400 50  0000 C CNN
 F 1 "CONN_01X02" V 1750 2200 50  0000 C CNN
-F 2 "" H 1600 2250 60  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 1600 2250 60  0001 C CNN
 F 3 "" H 1600 2250 60  0000 C CNN
 	1    1600 2250
 	1    0    0    -1  

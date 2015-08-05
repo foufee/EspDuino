@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:espduino-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -10,7 +11,6 @@ LIBS:cmos4000
 LIBS:adc-dac
 LIBS:memory
 LIBS:xilinx
-LIBS:special
 LIBS:microcontrollers
 LIBS:dsp
 LIBS:microchip
@@ -30,12 +30,42 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:littlebush
+LIBS:ab2_7segment
+LIBS:ab2_audio
+LIBS:ab2_buffer
+LIBS:ab2_capacitor
+LIBS:ab2_connectivity
+LIBS:ab2_dac
+LIBS:ab2_diode
+LIBS:ab2_gpio_expansion
+LIBS:ab2_header
+LIBS:ab2_idc
+LIBS:ab2_inductor
+LIBS:ab2_input_devices
+LIBS:ab2_jumper
+LIBS:ab2_lcd
+LIBS:ab2_led
+LIBS:ab2_opamp
+LIBS:ab2_pot
+LIBS:ab2_power
+LIBS:ab2_regulator
+LIBS:ab2_relay
+LIBS:ab2_resistor
+LIBS:ab2_sensor
+LIBS:ab2_stepper
+LIBS:ab2_supply
+LIBS:ab2_terminal_block
+LIBS:ab2_test
+LIBS:ab2_transistor
+LIBS:ab2_uC
+LIBS:ab2_usb
+LIBS:ab2_xtal
 LIBS:espduino-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 5
+Sheet 2 6
 Title ""
 Date ""
 Rev ""
@@ -51,7 +81,7 @@ U 1 1 55335E46
 P 4600 2550
 F 0 "U201" H 4500 2700 60  0000 C CNN
 F 1 "74HCT125" H 4600 2550 60  0000 C CNN
-F 2 "" H 4600 2550 60  0000 C CNN
+F 2 "SMD_Packages:SOIC-14_N" H 4600 2550 60  0001 C CNN
 F 3 "" H 4600 2550 60  0000 C CNN
 	1    4600 2550
 	1    0    0    -1  
@@ -62,7 +92,7 @@ U 2 1 55335E68
 P 4600 3850
 F 0 "U201" H 4500 4000 60  0000 C CNN
 F 1 "74HCT125" H 4600 3850 60  0000 C CNN
-F 2 "" H 4600 3850 60  0000 C CNN
+F 2 "SMD_Packages:SOIC-14_N" H 4600 3850 60  0001 C CNN
 F 3 "" H 4600 3850 60  0000 C CNN
 	2    4600 3850
 	1    0    0    -1  
@@ -73,7 +103,7 @@ U 3 1 55335E96
 P 4650 6050
 F 0 "U201" H 4550 6200 60  0000 C CNN
 F 1 "74HCT125" H 4650 6050 60  0000 C CNN
-F 2 "" H 4650 6050 60  0000 C CNN
+F 2 "SMD_Packages:SOIC-14_N" H 4650 6050 60  0001 C CNN
 F 3 "" H 4650 6050 60  0000 C CNN
 	3    4650 6050
 	1    0    0    -1  
@@ -86,7 +116,7 @@ U 1 1 55335F93
 P 3200 4225
 F 0 "U202" H 3200 4275 60  0000 C CNN
 F 1 "7400" H 3200 4125 60  0000 C CNN
-F 2 "" H 3200 4225 60  0000 C CNN
+F 2 "SMD_Packages:SOIC-14_N" H 3200 4225 60  0001 C CNN
 F 3 "" H 3200 4225 60  0000 C CNN
 	1    3200 4225
 	0    1    1    0   
@@ -114,7 +144,7 @@ U 4 1 553360DE
 P 4650 7200
 F 0 "U201" H 4550 7350 60  0000 C CNN
 F 1 "74HCT125" H 4650 7200 60  0000 C CNN
-F 2 "" H 4650 7200 60  0000 C CNN
+F 2 "SMD_Packages:SOIC-14_N" H 4650 7200 60  0001 C CNN
 F 3 "" H 4650 7200 60  0000 C CNN
 	4    4650 7200
 	1    0    0    -1  
@@ -145,7 +175,7 @@ U 2 1 5590F692
 P 3625 1450
 F 0 "U202" H 3625 1500 60  0000 C CNN
 F 1 "7400" H 3625 1350 60  0000 C CNN
-F 2 "" H 3625 1450 60  0000 C CNN
+F 2 "SMD_Packages:SOIC-14_N" H 3625 1450 60  0001 C CNN
 F 3 "" H 3625 1450 60  0000 C CNN
 	2    3625 1450
 	1    0    0    -1  
@@ -156,7 +186,7 @@ U 3 1 5590FA08
 P 3950 4925
 F 0 "U202" H 3950 4975 60  0000 C CNN
 F 1 "7400" H 3950 4825 60  0000 C CNN
-F 2 "" H 3950 4925 60  0000 C CNN
+F 2 "SMD_Packages:SOIC-14_N" H 3950 4925 60  0001 C CNN
 F 3 "" H 3950 4925 60  0000 C CNN
 	3    3950 4925
 	1    0    0    -1  

@@ -1,0 +1,324 @@
+EESchema Schematic File Version 2
+LIBS:espduino-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:littlebush
+LIBS:ab2_7segment
+LIBS:ab2_audio
+LIBS:ab2_buffer
+LIBS:ab2_capacitor
+LIBS:ab2_connectivity
+LIBS:ab2_dac
+LIBS:ab2_diode
+LIBS:ab2_gpio_expansion
+LIBS:ab2_header
+LIBS:ab2_idc
+LIBS:ab2_inductor
+LIBS:ab2_input_devices
+LIBS:ab2_jumper
+LIBS:ab2_lcd
+LIBS:ab2_led
+LIBS:ab2_opamp
+LIBS:ab2_pot
+LIBS:ab2_power
+LIBS:ab2_regulator
+LIBS:ab2_relay
+LIBS:ab2_resistor
+LIBS:ab2_sensor
+LIBS:ab2_stepper
+LIBS:ab2_supply
+LIBS:ab2_terminal_block
+LIBS:ab2_test
+LIBS:ab2_transistor
+LIBS:ab2_uC
+LIBS:ab2_usb
+LIBS:ab2_xtal
+LIBS:espduino-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LM3658 U601
+U 1 1 55A4E1F3
+P 3650 2100
+F 0 "U601" H 3700 2000 60  0000 C CNN
+F 1 "LM3658" H 3700 2350 60  0000 C CNN
+F 2 "footprints:WSON10" H 3750 1750 60  0001 C CNN
+F 3 "" H 3750 1750 60  0000 C CNN
+	1    3650 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR039
+U 1 1 55A4E220
+P 2400 2100
+F 0 "#PWR039" H 2400 1850 50  0001 C CNN
+F 1 "GND" H 2400 1950 50  0000 C CNN
+F 2 "" H 2400 2100 60  0000 C CNN
+F 3 "" H 2400 2100 60  0000 C CNN
+	1    2400 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L BARREL_JACK CON601
+U 1 1 55A4E23B
+P 1200 1000
+F 0 "CON601" H 1200 1250 60  0000 C CNN
+F 1 "BARREL_JACK" H 1200 800 60  0000 C CNN
+F 2 "Connect:BARREL_JACK" H 1200 1000 60  0001 C CNN
+F 3 "" H 1200 1000 60  0000 C CNN
+	1    1200 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR040
+U 1 1 55A4E28B
+P 1800 1200
+F 0 "#PWR040" H 1800 950 50  0001 C CNN
+F 1 "GND" H 1800 1050 50  0000 C CNN
+F 2 "" H 1800 1200 60  0000 C CNN
+F 3 "" H 1800 1200 60  0000 C CNN
+	1    1800 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L +6V #PWR041
+U 1 1 55A4E2A3
+P 1800 900
+F 0 "#PWR041" H 1800 750 50  0001 C CNN
+F 1 "+6V" H 1800 1040 50  0000 C CNN
+F 2 "" H 1800 900 60  0000 C CNN
+F 3 "" H 1800 900 60  0000 C CNN
+	1    1800 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L +6V #PWR042
+U 1 1 55A4E2CB
+P 2700 1750
+F 0 "#PWR042" H 2700 1600 50  0001 C CNN
+F 1 "+6V" H 2700 1890 50  0000 C CNN
+F 2 "" H 2700 1750 60  0000 C CNN
+F 3 "" H 2700 1750 60  0000 C CNN
+	1    2700 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C601
+U 1 1 55A4E2E9
+P 2550 1800
+F 0 "C601" H 2575 1900 50  0000 L CNN
+F 1 "1uF" H 2575 1700 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 2588 1650 30  0001 C CNN
+F 3 "" H 2550 1800 60  0000 C CNN
+	1    2550 1800
+	0    1    1    0   
+$EndComp
+$Comp
+L CONN_01X01 P601
+U 1 1 55A4E8E0
+P 5150 1800
+F 0 "P601" H 5150 1900 50  0000 C CNN
+F 1 "BATT+" V 5250 1800 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 5150 1800 60  0001 C CNN
+F 3 "" H 5150 1800 60  0000 C CNN
+	1    5150 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 2100 2950 2100
+Wire Wire Line
+	1500 1100 1800 1100
+Wire Wire Line
+	1800 1100 1800 1200
+Wire Wire Line
+	1500 900  1800 900 
+Wire Wire Line
+	2950 1800 2700 1800
+Wire Wire Line
+	2700 1800 2700 1750
+Wire Wire Line
+	2400 1800 2400 2100
+Wire Wire Line
+	4350 1800 4950 1800
+Wire Wire Line
+	2950 2400 2800 2400
+Wire Wire Line
+	2800 2400 2800 2550
+$Comp
+L GND #PWR043
+U 1 1 55A4EA6E
+P 2800 2550
+F 0 "#PWR043" H 2800 2300 50  0001 C CNN
+F 1 "GND" H 2800 2400 50  0000 C CNN
+F 2 "" H 2800 2550 60  0000 C CNN
+F 3 "" H 2800 2550 60  0000 C CNN
+	1    2800 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D601
+U 1 1 55A4EAEB
+P 4650 2250
+F 0 "D601" H 4650 2350 50  0000 C CNN
+F 1 "LED" H 4650 2150 50  0000 C CNN
+F 2 "LEDs:LED-0805" H 4650 2250 60  0001 C CNN
+F 3 "" H 4650 2250 60  0000 C CNN
+	1    4650 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D602
+U 1 1 55A4EB20
+P 4650 2400
+F 0 "D602" H 4650 2500 50  0000 C CNN
+F 1 "LED" H 4650 2300 50  0000 C CNN
+F 2 "LEDs:LED-0805" H 4650 2400 60  0001 C CNN
+F 3 "" H 4650 2400 60  0000 C CNN
+	1    4650 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 2250 4350 2250
+Wire Wire Line
+	4350 2400 4450 2400
+$Comp
+L R R602
+U 1 1 55A4EB81
+P 5050 2250
+F 0 "R602" V 5130 2250 50  0000 C CNN
+F 1 "1K" V 5050 2250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 4980 2250 30  0001 C CNN
+F 3 "" H 5050 2250 30  0000 C CNN
+	1    5050 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L R R603
+U 1 1 55A4EBD6
+P 5050 2400
+F 0 "R603" V 5130 2400 50  0000 C CNN
+F 1 "1K" V 5050 2400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 4980 2400 30  0001 C CNN
+F 3 "" H 5050 2400 30  0000 C CNN
+	1    5050 2400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4850 2250 4900 2250
+Wire Wire Line
+	4850 2400 4900 2400
+Wire Wire Line
+	5200 2400 5200 2250
+$Comp
+L R R601
+U 1 1 55A4EDA5
+P 5050 1950
+F 0 "R601" V 5130 1950 50  0000 C CNN
+F 1 "10K" V 5050 1950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 4980 1950 30  0001 C CNN
+F 3 "" H 5050 1950 30  0000 C CNN
+	1    5050 1950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5200 1950 5650 1950
+$Comp
+L GND #PWR044
+U 1 1 55A4EE48
+P 5650 1950
+F 0 "#PWR044" H 5650 1700 50  0001 C CNN
+F 1 "GND" H 5650 1800 50  0000 C CNN
+F 2 "" H 5650 1950 60  0000 C CNN
+F 3 "" H 5650 1950 60  0000 C CNN
+	1    5650 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 1950 4900 1950
+$Comp
+L R R604
+U 1 1 55A4EFE2
+P 5300 2100
+F 0 "R604" V 5380 2100 50  0000 C CNN
+F 1 "R" V 5300 2100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 5230 2100 30  0001 C CNN
+F 3 "" H 5300 2100 30  0000 C CNN
+	1    5300 2100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5150 2100 4350 2100
+Wire Wire Line
+	5450 1500 5450 2100
+Connection ~ 5450 1950
+NoConn ~ 2950 2250
+NoConn ~ 2950 1950
+$Comp
+L +6V #PWR045
+U 1 1 55A4F199
+P 6000 2200
+F 0 "#PWR045" H 6000 2050 50  0001 C CNN
+F 1 "+6V" H 6000 2340 50  0000 C CNN
+F 2 "" H 6000 2200 60  0000 C CNN
+F 3 "" H 6000 2200 60  0000 C CNN
+	1    6000 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 2200 6000 2250
+Wire Wire Line
+	6000 2250 5200 2250
+$Comp
+L C C602
+U 1 1 55A4F21D
+P 4800 1650
+F 0 "C602" H 4825 1750 50  0000 L CNN
+F 1 "1uF" H 4825 1550 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 4838 1500 30  0001 C CNN
+F 3 "" H 4800 1650 60  0000 C CNN
+	1    4800 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 1500 5450 1500
+Connection ~ 4800 1800
+$EndSCHEMATC
