@@ -229,4 +229,6 @@ Wire Wire Line
 	3675 5150 3675 6300
 Wire Wire Line
 	3675 6300 4550 6300
+Text Notes 4800 1850 0    60   ~ 0
+74HCT125 missing ground and VCC connectinons
 $EndSCHEMATC

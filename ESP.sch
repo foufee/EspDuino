@@ -241,4 +241,6 @@ Wire Wire Line
 	5100 2200 5450 2200
 Wire Wire Line
 	5450 2200 5450 2600
+Text Notes 2800 3200 0    60   ~ 0
+This is wrong, VRefA must be the lower voltage\n
 $EndSCHEMATC
